@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cinema Entertainment</title>
+  <link rel="stylesheet" href="scss/styles.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.png" alt="Logo" class="rounded me-2" style="width: 40px; height: auto;">
+        <strong class="h3 text-white">Cinema Entertainment</strong>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active h5 mx-3 text-white" aria-current="page" href="peliculas.html">Películas</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle h5 mx-3 text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Buscar por género
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="peliculas.html">Acción</a></li>
+              <li><a class="dropdown-item" href="peliculas.html">Aventura</a></li>
+              <li><a class="dropdown-item" href="peliculas.html">Ciencia ficción</a></li>
+              <li><a class="dropdown-item" href="peliculas.html">Comedia</a></li>
+              <li><a class="dropdown-item" href="peliculas.html">Drama</a></li>
+              <li><a class="dropdown-item" href="peliculas.html">Suspense</a></li>
+              <li><a class="dropdown-item" href="peliculas.html">Terror</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="peliculas.html">Ver últimos estrenos</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex me-3">
+          <input class="form-control me-2" type="search" placeholder="Buscar película" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+
+        <a class="navbar-brand" href="pago.html">
+          <img src="img/carrito.png" alt="Carrito" class="rounded" style="width: 40px; height: auto;">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="bg-dark text-white py-3 text-center">
+    <h2 class="fw-bold">Estrenos Populares</h2>
+  </div>
+
+  <div id="carouselExampleAutoplaying" class="carousel slide bg-dark py-4" data-bs-ride="carousel">
+    <div class="carousel-inner text-center">
+      <div class="carousel-item active">
+        <a href="pelicula.html">
+          <img src="img/nosferatu.jpg" class="d-block mx-auto img-fluid" alt="NOSFERATU"
+            style="max-width: 50%; height: auto;">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="pelicula.html">
+          <img src="img/mufasa.jpg" class="d-block mx-auto img-fluid" alt="MUFASA"
+            style="max-width: 50%; height: auto;">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="pelicula.html">
+          <img src="img/wolfman.jpg" class="d-block mx-auto img-fluid" alt="WOLFMAN"
+            style="max-width: 50%; height: auto;">
+        </a>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <h2 class="p-3 mb-2 mt-5 mx-5">¡Descubre la magia del cine! 🎥🍿</h2>
+  <p class="lead text-secondary text-center px-4">Sumérgete en una experiencia única que solo el cine puede ofrecer.
+    Aquí te contamos 3 razones por las que ir al
+    cine es la mejor opción para disfrutar del séptimo arte:</p>
+  <div id="promo" class="accordion h6 mx-5" id="accordionExample">
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          <h4>1. Pantalla gigante y sonido envolvente 🎬</h4>
+        </button>
+      </h3>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body p-3 mb-2">
+          Vive cada escena como si estuvieras dentro de la película. La calidad de imagen y el sonido envolvente del
+          cine no tienen comparación, permitiéndote sentir cada emoción al máximo.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          <h4>2. Una experiencia compartida 👥</h4>
+        </button>
+      </h3>
+
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Disfruta de las risas, los suspiros y los aplausos junto a otros amantes del cine. Compartir momentos
+          especiales en la gran pantalla crea recuerdos inolvidables.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h4>3. Estrenos exclusivos 🌟</h4>
+        </button>
+      </h3>
+
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Sé el primero en disfrutar de los estrenos más esperados y sumérgete en historias nuevas antes que nadie. ¡La
+          emoción de la primicia solo se vive en el cine!
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="lead text-secondary text-center px-4">Ven a nuestro cine y déjate sorprender. ¡Te esperamos con las mejores
+    películas y el ambiente perfecto para
+    disfrutar! 🎟️
+  </p>
+  </div>
+
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row text-center text-lg-start">
+
+        <div class="col-lg-4 mb-4">
+          <h4 class="text-uppercase fw-bold">Enlaces</h4>
+          <ul class="list-unstyled">
+            <li class="my-2"><a href="peliculas.html" class="text-white text-decoration-none">Películas</a></li>
+            <li class="my-2"><a href="index.html#promo" class="text-white text-decoration-none">Lo mejor del Cine</a>
+            </li>
+            <li class="my-2"><a href="pago.html" class="text-white text-decoration-none">Ir al carrito</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <h4 class="text-uppercase fw-bold">Contacto</h4>
+          <p class="mb-1">Correo electrónico: <a href="mailto:cinemaentertainment@email.com"
+              class="text-white text-decoration-none">cinemaentertainment@email.com</a></p>
+          <p class="mb-1">Dirección: c/ Nombre nº 1</p>
+          <p>Teléfono: 957112233</p>
+        </div>
+
+        <div class="col-lg-4">
+          <h4 class="text-uppercase fw-bold">Cinema Entertainment S.L</h4>
+          <p>(c) 2023 Cinema Entertainment. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

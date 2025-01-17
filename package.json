@@ -1,0 +1,23 @@
+{
+  "name": "interfaz-cine",
+  "version": "1.0.0",
+  "description": "Práctica de recuperación de Diseño de Interfaces Web, 1º trimestre.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/:css/",
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "bootstrap-sass": "^3.4.3"
+  },
+  "devDependencies": {
+    "sass": "^1.83.4",
+    "vite": "^6.0.7"
+  }
+}
