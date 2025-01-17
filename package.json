@@ -1,7 +1,7 @@
 {
-  "name": "interfaz-cine",
+  "name": "PracticaRecuperacion_1_JuliaAlcalde",
   "version": "1.0.0",
-  "description": "Práctica de recuperación de Diseño de Interfaces Web, 1º trimestre.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch scss/:css/",
